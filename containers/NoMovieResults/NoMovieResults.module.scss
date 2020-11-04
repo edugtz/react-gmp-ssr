@@ -1,0 +1,12 @@
+.no-movie-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    height: inherit;
+    min-height: inherit !important;
+
+    h1 {
+        font-size: 3em;
+    }
+}

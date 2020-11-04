@@ -1,0 +1,44 @@
+.movie-filters {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 10px;
+    border-bottom: 1px solid #555555;
+
+    p {
+        margin: 0;
+    }
+
+    .left-section {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+
+        p:nth-child(1) {
+            border-bottom: 1px solid red;
+            padding-bottom: 10px;
+        }
+    }
+
+    .right-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 20%;
+        color: #555555;
+
+        select {
+            font-size: 1em;
+            width: 100%;
+            background-color: inherit;
+            color: #555555;
+            border: none;
+            border-radius: 3px;
+        }
+    }
+
+    .selected-filter {
+        color: #ffffff;
+    }
+}

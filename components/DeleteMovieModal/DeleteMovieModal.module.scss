@@ -1,0 +1,34 @@
+.delete-movie-container {
+    width: 80%;
+    margin: 0 auto;
+
+    h2.modal-title {
+        color: #fefefe;
+        font-weight: 100;
+        letter-spacing: 2px;
+        margin: 20px 0;
+    }
+
+    p {
+        margin: 20px 0 40px 0;
+        color: #ffffff;
+    }
+
+    .modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px auto;
+
+        button {
+            border-radius: 3px;
+            padding: 10px 35px;
+            border: none;
+
+            &.submit-button {
+                margin-left: 8px;
+                color: #ffffff;
+                background-color: #f65261;
+            }
+        }
+    }
+}

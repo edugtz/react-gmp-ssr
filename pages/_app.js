@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import { Provider } from 'react-redux';
+import store from '../redux/store';
+import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import '../styles/globals.scss'
+
+function App({ Component, pageProps }) {
+  return <Provider store={store}>
+      <ErrorBoundary>
+        <Component {...pageProps} />
+      </ErrorBoundary>
+  </Provider>
 }
 
-export default MyApp
+export default App

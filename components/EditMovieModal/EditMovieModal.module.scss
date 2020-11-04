@@ -1,0 +1,87 @@
+.form-group {
+    width: 100%;
+    margin: 8px 0;
+}
+
+.edit-movie-container {
+    width: 80%;
+    margin: 0 auto;
+
+    label {
+        color: #f65261;
+        font-size: 0.8em;
+    }
+
+    h2.modal-title {
+        color: #fefefe;
+        font-weight: 100;
+        letter-spacing: 2px;
+        margin: 20px 0;
+    }
+
+    .release-date-wrapper {
+        position: relative;
+
+        &:after {
+            font-family: 'FontAwesome';
+            content: '\f073';
+            color: #f65261;
+            position: absolute;
+            top: 12px;
+            right: 6px;
+        }
+    }
+
+    .movie-genre-wrapper {
+        position: relative;
+
+        &:after {
+            font-family: 'FontAwesome';
+            content: '\f0d7';
+            color: #f65261;
+            position: absolute;
+            top: 12px;
+            right: 6px;
+        }
+    }
+
+    input,
+    select {
+        margin: 5px 0;
+        font-size: 0.8em;
+        padding: 8px;
+        width: 100%;
+        background-color: #424242;
+        color: #555555;
+        border: none;
+        border-radius: 3px;
+    }
+
+    select {
+        appearance: none;
+    }
+
+    .form-footer {
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px auto;
+
+        button {
+            border-radius: 3px;
+            padding: 10px 35px;
+            border: none;
+
+            &.reset-button {
+                background-color: inherit;
+                color: #f65261;
+                border: 1px solid #f65261;
+            }
+
+            &.submit-button {
+                margin-left: 8px;
+                color: #ffffff;
+                background-color: #f65261;
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+@import '../../styles/variables';
+
+.header {
+    min-height: 256px;
+    width: 100%;
+    display: flex;
+    max-height: 400px;
+
+    .app-title {
+        color: $primary-color;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: inherit;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(255, 255, 255, 0.2);
+        z-index: -2;
+        background-image: url('../../public/netflix-movies.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right top;
+        filter: blur(0.75px);
+    }
+
+    .overlay {
+        content: '';
+        position: absolute;
+        height: inherit;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+        background: rgba(0, 0, 0, 0.65);
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0px;
+    
+            .add-movie {
+                color: $primary-color;
+            }
+    
+            .add-movie {
+                text-align: center;
+                text-decoration: none;
+                border: none;
+                border-radius: 3px;
+                padding: 8px 8px;
+                background-color: rgba($color: #555555, $alpha: 0.3);
+            }
+    
+            .search-icon-wrapper {
+                display: flex;
+                align-items: center;
+                min-height: 33px;
+    
+                .search-toggle-icon {
+                    color: $primary-color;
+                    &:hover {
+                        cursor: pointer;
+                    }
+    
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    
+        .main-section {
+            width: 90%;
+            margin: 15px auto 0 auto;
+    
+            h2 {
+                color: $secondary-color;
+                font-weight: 100;
+                letter-spacing: 2px;
+            }
+    
+            .search-section {
+                display: flex;
+                justify-content: space-between;
+                height: auto;
+                width: 100%;
+                margin: 25px 0 0 0;
+    
+                .search-movies-button {
+                    color: $secondary-color;
+                    background-color: $primary-color;
+                    border-radius: 3px;
+                    padding: 0 40px;
+                    border: none;
+                }
+            }
+        }
+    }
+}

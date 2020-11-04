@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Home from '../containers/Home/Home';
+import NotFound404 from '../containers/NotFound404/NotFound404';
 
 export default class extends Component {
   render() {
     return (
-      <Home />
+      // <NotFound404 />
+      <p>Hello error</p>
     )
   }
 }

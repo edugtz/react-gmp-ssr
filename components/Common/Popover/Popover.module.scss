@@ -1,0 +1,38 @@
+.popover-container {
+    background-color: #232323;
+    border-radius: 3px;
+    min-width: 150px;
+    height: auto;
+    color: #ffffff;
+    position: absolute;
+    font-size: 1em;
+    z-index: 2000;
+    margin: 3px 3px 0 0;
+    opacity: 0.95;
+
+    .close-icon-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        .close-popover {
+            color: #ffffff;
+            cursor: pointer;
+            margin: 3px 5px 0 0;
+        }
+    }
+
+    .popover-action-wrapper {
+        width: 100%;
+
+        &:hover {
+            background-color: #f65261;
+            cursor: pointer;
+        }
+    }
+
+    p {
+        margin-left: 5px;
+        padding: 5px;
+    }
+}
